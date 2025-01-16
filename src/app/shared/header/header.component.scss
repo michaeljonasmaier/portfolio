@@ -1,0 +1,28 @@
+@import "../../../styles.scss";
+
+section{
+    @include dFlex(space-between, center);
+    @include pd100();
+    height: 117px;
+    >img{
+        height: 69px;
+        width: 69px
+    }
+    
+    >div{
+        @include dFlex();
+        gap: 30px;
+    }
+}
+
+.nav-link{
+    color: $main_blue;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-size: 23px;
+    width: 120px;
+    text-align: center;
+    &:hover{
+        font-weight: 500;
+    }
+}
