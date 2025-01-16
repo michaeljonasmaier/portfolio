@@ -4,6 +4,8 @@ section{
     @include dFlex(space-between, center);
     @include pd100();
     height: 117px;
+    z-index: 10;
+    position: relative;
     >img{
         height: 69px;
         width: 69px

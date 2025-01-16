@@ -11,6 +11,10 @@ $main_blue: #5988FF;
   padding-right: 100px;
 }
 
+body{
+  margin: 0;
+}
+
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
