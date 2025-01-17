@@ -1,8 +1,33 @@
+@import "../../styles.scss";
+
 section{
-    height: 100vh;
+    height: 110vh;
     position: relative;
     background-image: url("/assets/landing-page/background_ellipse.png");
     background-repeat: no-repeat;
     z-index: 0;
     margin-top: -117px;
+    @include dFlex();
+}
+
+.landing-top-div{
+    @include dFlex(column, center, center);
+    >span{
+        color: $main_blue;
+        text-align: center;
+    }
+    
+}
+
+.greeting{
+    color: $main_blue;
+    font-family: 'Montserrat';
+    font-size: 64px;
+}
+
+.job{
+    color: $main_blue;
+    font-family: 'Baloo 2';
+    font-size: 128px;
+    line-height: 153px;
 }

@@ -1,7 +1,7 @@
 @import "../../../styles.scss";
 
 section{
-    @include dFlex(space-between, center);
+    @include dFlex(row, space-between, center);
     @include pd100();
     height: 117px;
     z-index: 10;
