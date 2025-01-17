@@ -1,0 +1,98 @@
+@import "../../../styles.scss";
+
+section {
+    @include dFlex();
+    @include pd100();
+    overflow: hidden;
+    position: absolute;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.big-ellipse {
+    position: absolute;
+    top: -103px;
+}
+
+.small-ellipse {
+    position: absolute;
+    top: 25px;
+    left: calc(100% / 4 * 3 - 100px);
+}
+
+.left-div {
+    width: 50%;
+    @include dFlex(column, center, center);
+    gap: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    >h1 {
+        text-align: left;
+    }
+}
+
+.facts-div {
+    @include dFlex(row, space-between, center);
+    width: 100%;
+}
+
+.right-div {
+    @include dFlex(column, center, flex-start);
+    gap: 20px;
+    width: 50%;
+}
+
+.facts-item {
+
+    @include dFlex(row, space-between, flex-end);
+    gap: 15px;
+    color: $main_blue;
+    width: 210px;
+    height: 60px;
+    font-family: "Montserrat";
+    font-size: 18px;
+
+    >span {
+        width: 60%;
+    }
+
+    >div {
+        display: flex;
+        justify-content: flex-end;
+        width: 40%;
+    }
+}
+
+.located {
+    &:hover {
+        >div {
+            >img {
+                content: url("/assets/about-me/located_hover.png");
+            }
+        }
+
+    }
+}
+
+.remote {
+    &:hover {
+        >div {
+            >img {
+                content: url("/assets/about-me/remote_hover.png");
+            }
+        }
+
+    }
+}
+
+.relocate {
+    &:hover {
+        >div {
+            >img {
+                content: url("/assets/about-me/relocate_hover.png");
+            }
+        }
+
+    }
+}
