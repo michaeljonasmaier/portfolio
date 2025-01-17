@@ -13,7 +13,11 @@ $main_blue: #5988FF;
 }
 
 h1{
-  font-family: "Baloo 2";
+  font-family: "Baloo";
+  font-size: 128px;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
 }
 
 body{
@@ -99,8 +103,6 @@ body{
   src: url('/assets/fonts/montserrat-v29-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-
-
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -108,6 +110,16 @@ body{
   font-style: normal;
   font-weight: 400;
   src: url('/assets/fonts/baloo-2-v21-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Baloo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Baloo-Regular.ttf');
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
