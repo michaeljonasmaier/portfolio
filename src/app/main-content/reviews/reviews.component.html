@@ -1,0 +1,15 @@
+<section>
+    <div>
+        <h3>Need a teamplayer?</h3>
+        <span>Hear what my colleagues said about me</span>
+    </div>
+    <div class="review-div">
+        @for (reviewItem of reviewsArr; track reviewItem){
+            <div class="review-item">
+                <h5>{{reviewItem.name}}</h5>
+                <span>Project {{reviewItem.project}}</span>
+                <p>{{reviewItem.text}}</p>
+            </div>
+        }
+    </div>
+</section>

@@ -1,0 +1,48 @@
+@import "../../../styles.scss";
+
+section {
+    @include dFlex(column, center, center);
+    background: linear-gradient(to right, #5988FF, #5988FF, #0043F0);
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+}
+
+span {
+    font-family: "Montserrat";
+    font-size: 32px;
+}
+
+.review-div {
+    @include dFlex();
+    @include pd100();
+    gap: 100px;
+    margin-top: 70px;
+}
+
+.review-item{
+    @include dFlex(column, center, flex-start);
+    text-align: left;
+    font-family: "Montserrat";
+    width: 400px;
+    >h5 {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    >span{
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    >p{
+        font-size: 18px;
+    }
+}

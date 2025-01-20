@@ -1,7 +1,7 @@
 @import "../../../styles.scss";
 
 section {
-    position: absolute;
+    position: relative;
     @include dFlex(column, center, flex-start);
     @include pd100();
     padding-bottom: 100px;
@@ -51,7 +51,7 @@ section {
 }
 
 .bubble-6{
-    top: 1650px;
+    top: 1850px;
     left: 200px;
 }
 
