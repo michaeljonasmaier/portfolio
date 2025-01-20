@@ -1,8 +1,10 @@
 @import "../../../styles.scss";
 
 section {
+    position: absolute;
     @include dFlex(column, center, flex-start);
     @include pd100();
+    padding-bottom: 100px;
     h2{
         margin-top: 100px;
     }
@@ -15,5 +17,45 @@ section {
         width: 100%;
         @include dFlex(column, center, center);
     }
+}
 
+.bubble-1, .bubble-2, .bubble-3, .bubble-4, .bubble-5, .bubble-6, .bubble-7{
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bubble-1{
+    top: 500px;
+    left: 0;
+}
+
+.bubble-2{
+    top: 50px;
+    left: 700px;
+}
+
+.bubble-3{
+    top: 100px;
+    right: 200px;
+}
+
+.bubble-4{
+    top: 800px;
+    right: 0;
+}
+
+.bubble-5{
+    top: 1200px;
+    left: 200px;
+}
+
+.bubble-6{
+    top: 1650px;
+    left: 200px;
+}
+
+.bubble-7{
+    top: 100px;
+    left: 400px;
 }
