@@ -23,7 +23,22 @@ h1 {
 
 h2{
   font-family: "Baloo";
+  font-size: 96px;
+  margin: 0;
+  color: $main_blue;
+}
+
+h3{
+  font-family: "Baloo";
   font-size: 45px;
+  margin: 0;
+  color: $main_blue;
+}
+
+h4{
+  font-family: "Montserrat";
+  font-size: 23px;
+  font-weight: 400;
   margin: 0;
   color: $main_blue;
 }

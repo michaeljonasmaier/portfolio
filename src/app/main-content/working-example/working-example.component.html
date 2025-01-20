@@ -1,0 +1,19 @@
+<section [className]="workingExample.reverse ? 'reverse' : ''">
+    <div class="img-div">
+        <img src={{workingExample.imgPath}} alt="">
+    </div>
+    <div class="info-div">
+        <h3>{{workingExample.title}}</h3>
+        <h4>
+            @for(softwareItem of workingExample.software; track softwareItem; let index = $index){
+                @if(index < workingExample.software.length - 1){
+                    {{softwareItem}} | 
+                } @else {
+                    {{softwareItem}}
+                }
+            }
+        </h4>
+        <p>{{workingExample.description}}</p>
+        <app-pf-btn title="Github"></app-pf-btn>
+    </div>
+</section>

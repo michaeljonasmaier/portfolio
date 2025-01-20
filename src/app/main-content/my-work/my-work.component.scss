@@ -1,0 +1,19 @@
+@import "../../../styles.scss";
+
+section {
+    @include dFlex(column, center, flex-start);
+    @include pd100();
+    h2{
+        margin-top: 100px;
+    }
+    span{
+        font-family: "Montserrat";
+        font-size: 23px;
+        width: 40%;
+    }
+    >div{
+        width: 100%;
+        @include dFlex(column, center, center);
+    }
+
+}
