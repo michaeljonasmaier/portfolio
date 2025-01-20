@@ -4,7 +4,7 @@ section {
     @include dFlex();
     @include pd100();
     overflow: hidden;
-    position: absolute;
+    position: relative;
     padding-top: 150px;
     padding-bottom: 150px;
 }

@@ -1,0 +1,45 @@
+@import "../../../styles.scss";
+
+section {
+    background: linear-gradient(to right, #5988FF, #5988FF, #0043F0);
+    color: white;
+    font-family: "Montserrat";
+    font-size: 16px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    >h1 {
+        color: white;
+        font-size: 96px;
+        padding-bottom: 100px;
+    }
+
+    >div {
+        @include dFlex();
+        @include pd100();
+        padding-left: 300px;
+        padding-right: 300px;
+        gap: 80px;
+        flex-wrap: wrap;
+    }
+}
+
+.skill-item {
+    @include dFlex(column, center, center);
+    width: 140px;
+    gap: 10px;
+
+    &:hover {
+        span {
+            font-weight: bold;
+        }
+
+        img {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+.gm {
+    filter: drop-shadow(0px 4px 9px #0000007d);
+}
