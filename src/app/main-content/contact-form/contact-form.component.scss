@@ -1,0 +1,75 @@
+@import "../../../styles.scss";
+
+form {
+    @include dFlex(column, center, flex-start);
+    gap: 30px;
+    text-align: left;
+
+    .message-input {
+        height: 202px;
+    }
+}
+
+.error-message {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: #E61C40;
+    display: none;
+}
+
+.input-div, .textarea-div {
+    position: relative;
+    @include dFlex(column, flex-start, flex-start);
+    width: 680px;
+    height: 60px;
+}
+
+.textarea-div{
+    height:240px;
+}
+
+input,
+textarea {
+    width: 617px;
+    border: 1px solid $main_blue;
+    border-radius: 10px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    padding: 15px 25px 15px 25px;
+    background: none;
+
+    &:hover {
+        border: 2px solid $main_blue;
+    }
+
+    &:focus {
+        border: 1px solid $main_blue;
+        outline: none;
+    }
+
+    &::placeholder{
+        color: transparent;
+    }
+} 
+
+label {
+    position: absolute;
+    font-family: "Montserrat";
+    font-size: 16px;
+    background-color: white;
+    top: 16px;
+    left: 25px;
+    z-index: -1;
+}
+
+input:focus + label, input:valid + label, textarea:focus + label, textarea:valid + label{
+    z-index: 1;
+    transition: all 300ms ease-out;
+    transform: translateY(-26px) translateX(-10px);
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+input:required:invalid + .error-message{
+    display: none;
+}

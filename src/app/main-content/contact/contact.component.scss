@@ -1,0 +1,40 @@
+@import "../../../styles.scss";
+
+section{
+    @include dFlex(column, center, flex-start);
+    @include pd100();
+    padding-top: 130px;
+    padding-bottom: 50px;
+    text-align: left;
+    height: 100%;
+    >div{
+        @include dFlex(row, flex-start, stretch);
+        padding-top: 80px;
+        gap: 200px;
+    }
+}
+
+h2{
+    font-size: 90px;
+}
+
+.left{
+    @include dFlex(column, space-between, flex-start);
+    width: 40%;
+    >div{
+        flex: 1;
+        h4{
+            font-size: 32px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 16px;
+        }
+
+        span{
+            font-family: "Poppins";
+            font-size: 16px;
+            color: $main_blue;
+        }
+    }  
+}
