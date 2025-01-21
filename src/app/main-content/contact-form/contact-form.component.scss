@@ -14,62 +14,119 @@ form {
     font-family: "Montserrat";
     font-size: 14px;
     color: #E61C40;
-    display: none;
+    visibility: hidden;
+    padding-top: 5px;
 }
 
-.input-div, .textarea-div {
+.input-div,
+.textarea-div {
     position: relative;
     @include dFlex(column, flex-start, flex-start);
     width: 680px;
     height: 60px;
-}
 
-.textarea-div{
-    height:240px;
-}
-
-input,
-textarea {
-    width: 617px;
-    border: 1px solid $main_blue;
-    border-radius: 10px;
-    font-family: "Montserrat";
-    font-size: 16px;
-    padding: 15px 25px 15px 25px;
-    background: none;
-
-    &:hover {
-        border: 2px solid $main_blue;
+    >label {
+        position: absolute;
+        font-family: "Montserrat";
+        font-size: 16px;
+        background-color: white;
+        top: 16px;
+        left: 25px;
+        z-index: -1;
     }
 
-    &:focus {
+    input,
+    textarea {
+        width: 617px;
         border: 1px solid $main_blue;
-        outline: none;
+        border-radius: 10px;
+        font-family: "Montserrat";
+        font-size: 16px;
+        padding: 15px 25px 15px 25px;
+        background: none;
+        resize: none;
+
+        &:hover {
+            border: 2px solid $main_blue;
+        }
+
+        &:focus {
+            border: 1px solid $main_blue;
+            outline: none;
+        }
+
+        &::placeholder {
+            color: transparent;
+        }
+
+        &:user-invalid~.error-message {
+            visibility: visible;
+        }
+
+        /* 
+        &:focus:invalid ~ .error-message{
+            visibility: visible;
+        } */
     }
 
-    &::placeholder{
-        color: transparent;
+    input:focus+label,
+    input:valid+label,
+    textarea:focus+label,
+    textarea:valid+label {
+        z-index: 1;
+        transition: all 300ms ease-out;
+        transform: translateY(-26px) translateX(-10px);
+        padding-left: 3px;
+        padding-right: 3px;
     }
-} 
-
-label {
-    position: absolute;
-    font-family: "Montserrat";
-    font-size: 16px;
-    background-color: white;
-    top: 16px;
-    left: 25px;
-    z-index: -1;
 }
 
-input:focus + label, input:valid + label, textarea:focus + label, textarea:valid + label{
-    z-index: 1;
-    transition: all 300ms ease-out;
-    transform: translateY(-26px) translateX(-10px);
-    padding-left: 3px;
-    padding-right: 3px;
+.textarea-div {
+    height: 240px;
 }
 
-input:required:invalid + .error-message{
-    display: none;
+.checkbox-div {
+    @include dFlex(column, center, flex-start);
+
+    /*  .checkbox-input-div{
+        @include dFlex();
+        border-radius: 50%;
+        background-color: #D4E0FF;
+    } */
+    >div{
+        @include dFlex();
+        gap: 10px;
+    }
+
+    span {
+        font-family: "Montserrat";
+        font-size: 14px;
+
+        a {
+            color: $main_blue;
+
+            &:hover {
+                font-weight: 700;
+                color: #0043F0;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    input {
+        width: 18px;
+        height: 18px;
+        accent-color: $main_blue;
+    }
+}
+
+
+.button-div {
+    width: 100%;
+    @include dFlex();
+    margin-left: 60px;
+}
+
+.show {
+    visibility: visible;
 }

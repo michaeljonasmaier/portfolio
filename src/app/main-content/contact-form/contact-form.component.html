@@ -1,21 +1,31 @@
 <section>
-    <form>
+    <form (ngSubmit)="onSubmit()">
         <div class="input-div">
-            <input type="text" placeholder="Your name" required>
-            <label class="placeholder-text">Your name</label> 
-            <span class="error-message">Your name is required</span>   
+            <input [(ngModel)]="contactData.name" type="text" placeholder="Your name" name="name" required>
+            <label class="placeholder-text">Your name</label>
+            <span class="error-message">Your name is required</span>
         </div>
         <div class="input-div">
-            <input type="text" placeholder="Your email" required>
-            <label class="placeholder-text">Your email</label> 
+            <input [(ngModel)]="contactData.email" type="text" placeholder="Your email" name="email" required>
+            <label class="placeholder-text">Your email</label>
             <span class="error-message">Your email is required</span>
         </div>
-        <div class="textarea-div"> 
-            <textarea class="message-input" placeholder="Your message" rows="6" required></textarea>
-            <label class="placeholder-text">Your message</label> 
+        <div class="textarea-div">
+            <textarea [(ngModel)]="contactData.message" class="message-input" placeholder="Your message" name="message"
+                rows="6" required></textarea>
+            <label class="placeholder-text">Your message</label>
             <span class="error-message">Your message is empty</span>
         </div>
-       
-        <div><app-pf-btn type="submit" title="Say hello ;)"></app-pf-btn></div>
+        <div class="checkbox-div">
+            <div>
+                <div class="checkbox-input-div">
+                    <input type="checkbox" id="checkbox" required>
+                </div>
+                <span for="checkbox">I've read the <a>privacy policy</a> and agree to the processing of my data as
+                    outlined.</span>
+            </div>
+            <span class="error-message" id="errmsg">Please accept the privacy police</span>
+        </div>
+        <div class="button-div"><app-pf-btn type="submit" title="Say hello ;)"></app-pf-btn></div>
     </form>
 </section>
