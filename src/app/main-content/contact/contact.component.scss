@@ -3,6 +3,7 @@
 section{
     @include dFlex(column, center, flex-start);
     @include pd100();
+    position: relative;
     padding-top: 130px;
     padding-bottom: 50px;
     text-align: left;
@@ -20,6 +21,7 @@ h2{
 
 .left{
     @include dFlex(column, space-between, flex-start);
+    position: relative;
     width: 40%;
     >div{
         flex: 1;
@@ -37,4 +39,27 @@ h2{
             color: $main_blue;
         }
     }  
+}
+
+.right{
+    position: relative;
+}
+
+.bubble-l, .bubble-m, .bubble-s{
+    position: absolute;
+}
+
+.bubble-l{
+    top: 40%;
+    left: 40%;
+}
+
+.bubble-m{
+    top: 10%;
+    left: 60%;
+}
+
+.bubble-s{
+    top: 90%;
+    left: 90%;
 }

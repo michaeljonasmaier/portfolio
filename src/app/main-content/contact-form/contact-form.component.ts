@@ -5,7 +5,7 @@ import { FormsModule, FormGroup, FormBuilder, Validators, FormControl, ReactiveF
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [PfBtnComponent, FormsModule, ReactiveFormsModule],
+  imports: [FormsModule, ReactiveFormsModule],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })
