@@ -1,0 +1,75 @@
+@import "../../../styles.scss";
+
+section {
+    @include dFlex(column, center, center);
+    @include pd100();
+    background: linear-gradient(to right, #5988FF, #5988FF, #0043F0);
+    padding-top: 100px;
+    padding-bottom: 90px;
+
+
+}
+
+.footer-content {
+    @include dFlex(row, space-between, center);
+    width: 100%;
+
+    >img {
+        height: 69px;
+        width: 69px
+    }
+
+    div {
+        @include dFlex(column, center, center);
+        gap: 20px;
+
+        >h4 {
+            color: white;
+        }
+
+        >.legal-notice {
+            color: white;
+            font-family: 'Montserrat';
+            font-size: 16px;
+            text-decoration: none;
+            position: relative;
+
+            &:hover {
+                font-weight: bold;
+            }
+
+            &::after {
+                content: ''; /* Erzeugt ein leeres Element */
+                position: absolute;
+                bottom: -5px; /* Direkt unter dem Text */
+                left: 50%; /* Startpunkt in der Mitte des Textes */
+                transform: translateX(-50%) scaleX(0); /* Unsichtbar und zentriert */
+                width: 50%; /* Breite des Unterstrichs (50% des Textes) */
+                height: 2px; /* Höhe des Unterstrichs */
+                background-color: #ffffff; /* Farbe des Unterstrichs */
+                transform-origin: left; /* Transformation erfolgt von der Mitte */
+                transition: transform 0.1s ease; /* Sanfte Animation */
+              }
+              
+            &:hover::after {
+                transform: translateX(-50%)  /* Sichtbar und auf volle Breite skalieren */
+              }
+        }
+    }
+
+    .socials-div {
+        @include dFlex();
+        gap: 50px;
+
+        >div {
+            @include dFlex();
+            height: 50px;
+            width: 50px;
+
+            >a:hover {
+                transition: all 100ms ease-out;
+                transform: scale(1.3);
+            }
+        }
+    }
+}
