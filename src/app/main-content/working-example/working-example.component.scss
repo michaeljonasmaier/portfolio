@@ -40,3 +40,24 @@ img {
     width: 90%;
     box-shadow: 5px 5px 15px 0px #00000016;
 }
+
+@media(max-width: 390px){
+    section {
+        @include dFlex(column, center, center);
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        >div {
+            width: 100%;
+        }
+    }
+
+    .reverse{
+        flex-direction: column;
+        text-align: center;
+        >.info-div{
+            @include dFlex(column, center, center);
+        }
+    }
+}

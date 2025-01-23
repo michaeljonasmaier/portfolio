@@ -88,3 +88,32 @@ section {
     top: 100px;
     left: 400px;
 }
+
+@media(max-width: 390px){
+    section {
+        @include pd20();
+        padding-bottom: 50px;
+        h2 {
+            font-size: 64px;
+        }
+    
+        span {
+            width: 100%;
+        }
+
+        div{
+            padding-top: 40px;
+        }
+    
+    }
+
+    .bubble-1,
+.bubble-2,
+.bubble-3,
+.bubble-4,
+.bubble-5,
+.bubble-6,
+.bubble-7 {
+   
+}
+}
