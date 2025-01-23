@@ -1,12 +1,17 @@
 @import "../../../styles.scss";
 
-section {
+.background-gradient{
     background: linear-gradient(to right, #5988FF, #5988FF, #0043F0);
+    width: 100%;
+}
+
+section {
     color: white;
     font-family: "Montserrat";
     font-size: 16px;
     padding-top: 70px;
     padding-bottom: 70px;
+    @include maxWidth();
 
     >h1 {
         color: white;

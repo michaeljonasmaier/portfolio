@@ -1,8 +1,12 @@
 @import "../../../styles.scss";
 
+header{
+    width: 100%
+}
 section{
     @include dFlex(row, space-between, center);
     @include pd100();
+    @include maxWidth();
     height: 117px;
     z-index: 10;
     position: relative;

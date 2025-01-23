@@ -1,62 +1,73 @@
 @import "../../../styles.scss";
 
-.gradient-div{
-    background-image: linear-gradient(to top, #edf2ff, #ffffff); 
+.gradient-div {
+    background-image: linear-gradient(to top, #edf2ff, #ffffff);
+    width: 100%;
 }
 
-section{
-    height: 100vh;
+section {
+    height: 1000px;
     position: relative;
-    background-image: url("/assets/landing-page/background_ellipse.png");
+    background-position: -250px -100px;
     background-repeat: no-repeat;
     z-index: 0;
     color: $main_blue;
     margin-top: -117px;
     @include dFlex(row, center, flex-end);
     @include pd100();
+    @include maxWidth();
 }
 
-.landing-top-div{
+.background-ellipse {
+    position: absolute;
+    top: -100px;
+    left: -250px;
+    z-index: -1;
+}
+
+.landing-top-div {
     @include dFlex(column, center, center);
     margin-bottom: 50px;
-    >span{
+
+    >span {
         text-align: center;
-    } 
+    }
 }
 
-.landing-bottom-div{
+.landing-bottom-div {
     @include dFlex(row, space-between, flex-end);
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 23px;
-    >div{
+
+    >div {
         @include dFlex(column, center, center);
-        >span{
+
+        >span {
             margin-bottom: 10px;
         }
     }
 }
 
-.greeting{
+.greeting {
     font-family: 'Montserrat';
     font-size: 64px;
 }
 
-.socials-div{
+.socials-div {
     gap: 30px;
     margin-bottom: 20px;
-    >a{
+
+    >a {
         height: 40px;
         width: 40px;
     }
 }
 
-.social-item{
+.social-item {
     transition: 0.1s ease-out;
 }
 
-.social-item:hover{
+.social-item:hover {
     transform: translate(-10px);
 }
-
-

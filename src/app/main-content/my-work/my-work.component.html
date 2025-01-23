@@ -1,12 +1,15 @@
-<section>
-    <h2>My work</h2>
-    <span>Explore a selection of my work here - Interact with projects to see my skills in action.</span>
-    <div class="working-examples-div">
-        @for(weItem of workingExamplesArr; track weItem.title; let index = $index){            
-                <app-working-example [workingExample]="weItem"></app-working-example>
-        }
-    </div>
-   
+<div class="content">
+    <section>
+        <h2>My work</h2>
+        <span>Explore a selection of my work here - Interact with projects to see my skills in action.</span>
+        <div class="working-examples-div">
+            @for(weItem of workingExamplesArr; track weItem.title; let index = $index){
+            <app-working-example [workingExample]="weItem"></app-working-example>
+            }
+        </div>
+
+    </section>
+
     <img class="bubble-1" src="/assets/my-work/ellipse.png" alt="">
     <img class="bubble-2" src="/assets/my-work/ellipse_reverse.png" alt="">
     <img class="bubble-3" src="/assets/my-work/ellipse.png" alt="">
@@ -14,7 +17,5 @@
     <img class="bubble-5" src="/assets/my-work/ellipse.png" alt="">
     <img class="bubble-6" src="/assets/my-work/ellipse_reverse.png" alt="">
     <!-- <img class="bubble-7" src="/assets/my-work/ellipse.png" alt=""> -->
-    
-</section>
 
-    
+</div>

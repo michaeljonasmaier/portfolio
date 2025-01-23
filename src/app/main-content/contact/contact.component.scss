@@ -3,6 +3,7 @@
 section{
     @include dFlex(column, center, flex-start);
     @include pd100();
+    @include maxWidth();
     position: relative;
     padding-top: 130px;
     padding-bottom: 50px;

@@ -1,12 +1,17 @@
 @import "../../../styles.scss";
 
+.background-gradient{
+    background: linear-gradient(to right, #5988FF, #5988FF, #0043F0);
+    width: 100%;
+}
 section {
     @include dFlex(column, center, center);
-    background: linear-gradient(to right, #5988FF, #5988FF, #0043F0);
+    
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
+    @include maxWidth();
 }
 
 h3 {

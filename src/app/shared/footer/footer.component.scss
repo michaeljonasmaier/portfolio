@@ -1,13 +1,16 @@
 @import "../../../styles.scss";
 
-section {
+footer {
+    background: linear-gradient(to right, #5988FF, #5988FF, #0043F0);
+    width: 100%;
+}
+
+.full-content{
     @include dFlex(column, center, center);
     @include pd100();
-    background: linear-gradient(to right, #5988FF, #5988FF, #0043F0);
+    @include maxWidth();
     padding-top: 100px;
     padding-bottom: 90px;
-
-
 }
 
 .footer-content {
