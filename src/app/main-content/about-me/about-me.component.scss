@@ -97,3 +97,63 @@ section {
 
     }
 }
+
+@media(max-width: 390px){
+    section{
+        @include dFlex(column, flex-start, flex-start);
+        @include pd20();
+        overflow:visible;
+        padding-top: 130px;
+    }
+
+    .big-ellipse {
+        height: 156px;
+        width: 156px;
+        top: -78px;
+        left: calc(50% - 78px);
+    }
+
+    .small-ellipse {
+        height: 61px;
+        width: 61px;
+        top: 25px;
+        left: calc(100% / 4 * 3 );
+    }
+
+    .left-div {
+        width: 100%;
+        padding: 0;
+        gap: 20px;
+        >h1 {
+            font-size: 58px;
+        }
+
+        >h3{
+            font-size: 32px;
+        }
+    }
+
+    .facts-div {
+        @include dFlex(column, space-between, center);
+        width: 100%;
+        gap: 20px;
+    }
+
+    .facts-item{
+        width: 100%;
+        @include dFlex(row, center, center);
+        >span {
+            width: auto;
+        }
+    
+        >div {
+            width: auto;
+        }
+    }
+
+    .right-div {
+        @include dFlex(column, center,center);
+        gap: 20px;
+        width: 100%;
+    }
+}
