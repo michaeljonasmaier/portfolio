@@ -12,6 +12,11 @@ $main_blue: #5988FF;
   padding-right: 100px;
 }
 
+@mixin pd20{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 @mixin maxWidth {
   max-width: 1920px;
   margin-left: auto;

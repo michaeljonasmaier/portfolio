@@ -10,15 +10,15 @@ section{
     height: 117px;
     z-index: 10;
     position: relative;
-    >img{
+    >.logo{
         height: 69px;
         width: 69px
-    }
-    
-    >div{
-        @include dFlex();
-        gap: 30px;
-    }
+    } 
+}
+
+.nav-links{
+    @include dFlex();
+    gap: 30px;
 }
 
 .nav-link{
@@ -31,4 +31,30 @@ section{
     &:hover{
         font-weight: 500;
     }
+}
+
+.burger-menu{
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+@media(max-width: 390px){
+    section{
+        @include pd20();
+        .logo{
+            height: 58px;
+            width: 58px;
+        }
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+
+    
 }

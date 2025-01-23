@@ -22,7 +22,7 @@ section {
     position: absolute;
     top: -100px;
     left: -250px;
-    z-index: -1;
+    z-index: -10;
 }
 
 .landing-top-div {
@@ -71,3 +71,50 @@ section {
 .social-item:hover {
     transform: translate(-10px);
 }
+
+@media(max-width: 390px) {
+    section {
+        @include dFlex(column-reverse, center, center);
+       padding: 0;
+        color: white;
+        width: 100%;
+        overflow: hidden;
+        height: 680px;
+    }
+    
+    .profile-img {
+       width: 375px;
+    
+    }
+
+    .background-ellipse {
+        width: 512px;
+        height: 512px;
+        top: -50px;
+        left: -160px;
+        z-index: -10;
+    }
+
+    .greeting {
+        color: white;
+        font-size: 24px;
+    }
+
+    h1 {
+        color: white;
+        font-size: 54px;
+        text-align: left;
+    }
+
+    .landing-top-div {
+        @include dFlex(column, center, flex-start);
+        @include pd20();
+        margin-bottom: 0;
+        padding-top: 110px;
+    }
+
+    .landing-bottom-div {
+        display: none;
+    }
+}
+
