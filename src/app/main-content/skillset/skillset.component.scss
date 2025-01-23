@@ -1,6 +1,6 @@
 @import "../../../styles.scss";
 
-.background-gradient{
+.background-gradient {
     background: linear-gradient(to right, #5988FF, #5988FF, #0043F0);
     width: 100%;
 }
@@ -64,8 +64,46 @@ section {
         .gm-hover-img {
             display: block;
         }
+
         span {
             font-weight: bold;
         }
     }
+}
+
+@media(max-width: 390px) {
+    section {
+        padding-top: 40px;
+    padding-bottom: 40px;
+        @include pd20();
+        h1 {
+            font-size: 64px;
+            padding-bottom: 50px;
+        }
+
+        >div {
+            @include dFlex();
+            gap: 50px;
+            padding: 0;
+        }
+    }
+
+    .skill-item {
+        gap: 10px;
+        width: auto;
+        font-size: 14px;
+        img {
+            height: 60px;
+            width: 60px;
+        }
+    }
+
+    .gm {
+        width: auto;
+        >img{
+            height: 60px;
+            width: 60px;
+        }
+    }
+
 }
