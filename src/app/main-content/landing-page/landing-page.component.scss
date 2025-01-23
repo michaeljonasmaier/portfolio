@@ -72,6 +72,17 @@ section {
     transform: translate(-10px);
 }
 
+.scroll-msg{
+    display: none;
+    font-family: "Poppins";
+    font-size: 23px;
+    writing-mode: vertical-rl;
+    color: $main_blue;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
 @media(max-width: 390px) {
     section {
         @include dFlex(column-reverse, center, center);
@@ -84,7 +95,7 @@ section {
     
     .profile-img {
        width: 375px;
-    
+        
     }
 
     .background-ellipse {
@@ -115,6 +126,10 @@ section {
 
     .landing-bottom-div {
         display: none;
+    }
+
+    .scroll-msg{
+        display: block;
     }
 }
 
