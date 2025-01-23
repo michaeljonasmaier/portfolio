@@ -2,6 +2,7 @@
 
 section {
     position: relative;
+    overflow: hidden;
     @include dFlex(column, center, flex-start);
     @include pd100();
     padding-bottom: 100px;
@@ -26,36 +27,50 @@ section {
 }
 
 .bubble-1{
-    top: 500px;
-    left: 0;
-}
-
-.bubble-2{
-    top: 50px;
+    height: 109px;
+    width: 109px;
+    top: 80px;
     left: 700px;
 }
 
+.bubble-2{
+    height: 183px;
+    width: 183px;
+    top: 200px;
+    right: 300px;
+}
+
 .bubble-3{
-    top: 100px;
-    right: 200px;
+    height: 393px;
+    width: 393px;
+    top: 650px;
+    left: -150px;
 }
 
 .bubble-4{
-    top: 800px;
-    right: 0;
+    height: 652px;
+    width: 652px;
+    top: 880px;
+    right: -150px;
 }
 
 .bubble-5{
-    top: 1200px;
-    left: 200px;
+    height: 51px;
+    width: 51px;
+    top: 1350px;
+    left: 150px;
 }
 
 .bubble-6{
+    height: 238px;
+    width: 238px;
     top: 1850px;
     left: 200px;
 }
 
 .bubble-7{
+    height: 98px;
+    width: 98px;
     top: 100px;
     left: 400px;
 }
