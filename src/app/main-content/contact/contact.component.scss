@@ -64,3 +64,33 @@ h2{
     top: 90%;
     left: 90%;
 }
+
+@media(max-width: 390px){
+    section{
+        @include pd20();
+        >div{
+            @include dFlex(column, center, center);
+            padding-top: 30px;
+            gap: 30px;
+        }
+    }
+
+    h2{
+        font-size: 45px;
+    }
+
+    .left{
+        width: 100%;
+        >div{
+            h4{
+                font-size: 23px;
+            }
+        }  
+    }
+
+    .bubble-s, .bubble-m, .bubble-l{
+        display: none;
+    }
+
+    
+}

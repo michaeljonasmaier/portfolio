@@ -146,7 +146,7 @@ form {
     visibility: visible;
 }
 
-.submit-btn-div{
+.submit-btn-div {
     height: 80px;
     width: 300px;
 }
@@ -199,5 +199,35 @@ form:valid .submit-btn {
 
     &:hover::before {
         left: 0;
+    }
+}
+
+@media(max-width: 390px) {
+
+    .input-div,
+    .textarea-div {
+        width: 100%;
+
+        >input,
+        textarea {
+            width: calc(100% - 50px);
+        }
+    }
+
+    .button-div {
+        margin: 0;
+    }
+
+    .submit-btn-div {
+        height: 80px;
+        width: auto;
+    }
+
+    form {
+        gap: 20px;
+    }
+
+    .error-img {
+        left: 90%;
     }
 }
