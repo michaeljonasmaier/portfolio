@@ -5,7 +5,7 @@ footer {
     width: 100%;
 }
 
-.full-content{
+.full-content {
     @include dFlex(column, center, center);
     @include pd100();
     @include maxWidth();
@@ -42,23 +42,32 @@ footer {
             }
 
             &::after {
-                content: ''; /* Erzeugt ein leeres Element */
+                content: '';
+                /* Erzeugt ein leeres Element */
                 position: absolute;
-                bottom: -5px; /* Direkt unter dem Text */
-                left: 0; /* Startpunkt in der Mitte des Textes */
-                transform: translateX(0) scaleX(0); /* Unsichtbar und zentriert */
-                width: 50%; /* Breite des Unterstrichs (50% des Textes) */
-                height: 2px; /* Höhe des Unterstrichs */
-                background-color: #ffffff; /* Farbe des Unterstrichs */
-                transform-origin: left; /* Transformation erfolgt von der Mitte */
-                transition: all 0.1s ease; /* Sanfte Animation */
+                bottom: -5px;
+                /* Direkt unter dem Text */
+                left: 0;
+                /* Startpunkt in der Mitte des Textes */
+                transform: translateX(0) scaleX(0);
+                /* Unsichtbar und zentriert */
+                width: 50%;
+                /* Breite des Unterstrichs (50% des Textes) */
+                height: 2px;
+                /* Höhe des Unterstrichs */
+                background-color: #ffffff;
+                /* Farbe des Unterstrichs */
+                transform-origin: left;
+                /* Transformation erfolgt von der Mitte */
+                transition: all 0.1s ease;
+                /* Sanfte Animation */
                 opacity: 0;
-              }
-              
+            }
+
             &:hover::after {
                 transform: translateX(50%) scaleX(1);
                 opacity: 1;
-              }
+            }
         }
     }
 
@@ -75,6 +84,26 @@ footer {
                 transition: all 100ms ease-out;
                 transform: scale(1.3);
             }
+        }
+    }
+}
+
+
+@media(max-width: 390px) {
+    .full-content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @include pd20();
+    }
+
+    .footer-content {
+        @include dFlex(column, center, center);
+        text-align: center;
+        gap: 20px;
+
+        .socials-div {
+            gap: 20px;
+
         }
     }
 }
