@@ -4,4 +4,5 @@ export interface WorkingExample {
     software: string [];
     description: string;
     reverse: boolean;
+    link: string;
 }

@@ -1,6 +1,6 @@
 @import "../../../styles.scss";
 
-section{
+section {
     @include dFlex(column, center, flex-start);
     @include pd100();
     @include maxWidth();
@@ -9,88 +9,104 @@ section{
     padding-bottom: 50px;
     text-align: left;
     height: 100%;
-    >div{
+
+    >div {
         @include dFlex(row, flex-start, stretch);
         padding-top: 80px;
         gap: 200px;
     }
 }
 
-h2{
+h2 {
     font-size: 90px;
 }
 
-.left{
+.left {
     @include dFlex(column, space-between, flex-start);
     position: relative;
     width: 40%;
-    >div{
+
+    >div {
         flex: 1;
-        h4{
+
+        h4 {
             font-size: 32px;
             font-weight: 700;
         }
-        p{
+
+        p {
             font-size: 16px;
         }
 
-        span{
+        span {
             font-family: "Poppins";
             font-size: 16px;
             color: $main_blue;
         }
-    }  
+    }
 }
 
-.right{
+.up-btn {
+    &:hover {
+        content: url("/assets/contact/up_btn_hover.png");
+    }
+}
+
+.right {
     position: relative;
 }
 
-.bubble-l, .bubble-m, .bubble-s{
+.bubble-l,
+.bubble-m,
+.bubble-s {
     position: absolute;
 }
 
-.bubble-l{
+.bubble-l {
     top: 40%;
     left: 40%;
 }
 
-.bubble-m{
+.bubble-m {
     top: 10%;
     left: 60%;
 }
 
-.bubble-s{
+.bubble-s {
     top: 90%;
     left: 90%;
 }
 
-@media(max-width: 390px){
-    section{
+@media(max-width: 390px) {
+    section {
         @include pd20();
-        >div{
+
+        >div {
             @include dFlex(column, center, center);
             padding-top: 30px;
             gap: 30px;
         }
     }
 
-    h2{
+    h2 {
         font-size: 45px;
     }
 
-    .left{
+    .left {
         width: 100%;
-        >div{
-            h4{
+
+        >div {
+            h4 {
                 font-size: 23px;
             }
-        }  
+        }
     }
 
-    .bubble-s, .bubble-m, .bubble-l{
+    .bubble-s,
+    .bubble-m,
+    .bubble-l {
         display: none;
     }
 
-    
+
 }

@@ -63,6 +63,10 @@ body {
   margin: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* montserrat-100 - latin */
 @font-face {
   font-display: swap;
