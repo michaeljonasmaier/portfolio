@@ -1,12 +1,13 @@
 @import "../../../styles.scss";
 
-.background-gradient{
+.background-gradient {
     background: linear-gradient(to right, #5988FF, #5988FF, #0043F0);
     width: 100%;
 }
+
 section {
     @include dFlex(column, center, center);
-    
+
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -30,24 +31,70 @@ span {
     margin-top: 70px;
 }
 
-.review-item{
-    @include dFlex(column, center, flex-start);
+.review-item {
     text-align: left;
     font-family: "Montserrat";
     width: 400px;
+
     >h5 {
         font-size: 24px;
         font-weight: 700;
         margin: 0;
     }
 
-    >span{
+    >span {
         font-size: 16px;
         font-weight: 400;
         margin-top: 10px;
     }
 
-    >p{
+    >p {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 390px) {
+    section {
+        @include dFlex(column, flex-start, flex-start);
+        padding-top: 40px;
+        padding-bottom: 40px;
+        >div{
+            width: 100%;
+        }
+    }
+
+    h3 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    span {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .review-item {
+        width: 300px;
+        text-align: center;
+
+        >p {
+            font-size: 16px;
+        }
+    }
+
+    .scroll-wrapper {
+        overflow-x: auto;
+        /* Aktiviert das horizontale Scrollen */
+
+        width: 100%;
+        /* Breite des sichtbaren Bereichs */
+    }
+
+    .review-div {
+        gap: 50px;
+        width: 200%;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 40px;
     }
 }
