@@ -8,6 +8,7 @@ section {
     padding-top: 150px;
     padding-bottom: 150px;
     @include maxWidth();
+    background-color: white;
 }
 
 .big-ellipse {
@@ -98,11 +99,82 @@ section {
     }
 }
 
-@media(max-width: 390px){
-    section{
+@media(max-width: 1400px) {
+    .left-div {
+        >h1 {
+            font-size: 90px;
+        }
+    }
+
+    .facts-item {
+        @include dFlex(column, flex-end, center);
+        width: 180px;
+        text-align: center;
+        height: 120px;
+
+        >span {
+            width: auto;
+        }
+
+        >div {
+            width: auto;
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 1000px) {
+    section {
+        @include pd50();
+    }
+}
+
+@media(max-width: 900px) {
+    section {
+        @include dFlex(column, center, center);
+        @include pd20();
+        overflow: visible;
+        padding-top: 130px;
+    }
+
+    .left-div,
+    .right-div {
+        width: 70%;
+        gap: 20px;
+    }
+
+    .right-div {
+        padding-top: 40px;
+        align-items: center
+    }
+
+    ;
+}
+
+@media(max-width: 700px) {
+
+    .left-div {
+        width: 90%;
+        >h1 {
+            font-size: 58px;
+        }
+    }
+
+    .right-div{
+        width: 90%;
+    }
+}
+
+@media(max-width: 390px) {
+    section {
         @include dFlex(column, flex-start, flex-start);
         @include pd20();
-        overflow:visible;
+        overflow: visible;
         padding-top: 130px;
     }
 
@@ -117,18 +189,19 @@ section {
         height: 61px;
         width: 61px;
         top: 25px;
-        left: calc(100% / 4 * 3 );
+        left: calc(100% / 4 * 3);
     }
 
     .left-div {
         width: 100%;
         padding: 0;
         gap: 20px;
+
         >h1 {
             font-size: 58px;
         }
 
-        >h3{
+        >h3 {
             font-size: 32px;
         }
     }
@@ -139,20 +212,21 @@ section {
         gap: 20px;
     }
 
-    .facts-item{
+    .facts-item {
         width: 100%;
         @include dFlex(row, center, center);
+        height: auto;
         >span {
             width: auto;
         }
-    
+
         >div {
             width: auto;
         }
     }
 
     .right-div {
-        @include dFlex(column, center,center);
+        @include dFlex(column, center, center);
         gap: 20px;
         width: 100%;
     }

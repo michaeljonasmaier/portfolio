@@ -1,0 +1,21 @@
+{
+    "about-me": {
+      "hello": "hello {{value}}",
+      "title": "Translation Demo"
+    },
+    "landing-page":{
+
+    },
+    "contact":{
+
+    },
+    "my-work":{
+
+    },
+    "reviews":{
+
+    },
+    "skillset":{
+
+    }
+  }

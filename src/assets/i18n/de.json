@@ -1,0 +1,62 @@
+{
+  "about-me": {
+    "title": "Let's work together!",
+    "title-2": "Ich bin",
+    "wohnsitz": "wohnhaft in Stuttgart",
+    "remote": "offen remote zu arbeiten",
+    "umzug": "bereit umzuziehen",
+    "beschreibung": "Ich bin ein Front-End-Entwickler aus Stuttgart. Es macht mir Spaß, Designern und Unternehmen dabei zu helfen, ihre Ideen in die Realität umzusetzen. Ich freue mich darauf, meine Entwicklerkarriere mit einer Stelle als Junior-Webentwickler fortzusetzen. Meine Fähigkeit, komplexe Probleme zu lösen und meine Leidenschaft für das Programmieren machen mich zu einem wertvollen Mitglied für Ihr Team.",
+    "beschreibung-2": "Wenn Sie glauben, dass ich gut zu Ihren Projekten passen würde, kontaktieren Sie mich!",
+    "kontakt": "Schreiben Sie mir!"
+  },
+  "landing-page": {
+    "scrollen": "scrollen",
+    "begruessung": "Hallo! Ich bin Michael"
+  },
+  "contact": {
+    "titel": "Kontakt",
+    "problem": "Sie haben ein Problem zu lösen?",
+    "beschreibung": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihren Ideen zu hören und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "frage": "Brauchen Sie einen Frontend-Entwickler? ",
+    "frage-2": "Kontaktieren Sie mich!",
+    "privacy": "Ich habe die ",
+    "privacy-2": "Datenschutzbestimmungen ",
+    "privacy-3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "button": "Hallo sagen ;)",
+    "name": "Name",
+    "email": "E-Mail",
+    "nachricht": "Nachricht",
+    "name-iv": "Ihr Name wird benötigt",
+    "email-iv": "Ihre E-Mail wird benötigt",
+    "nachricht-iv": "Ihre Nachricht wird benötigt",
+    "privacy-iv": "Bitte akzeptieren Sie die Datenschutzbestimmungen"
+  },
+  "my-work": {
+    "projekte": "Projekte",
+    "beschreibung": "Entdecken Sie hier eine Auswahl meiner Projekte - durch klicken auf die Buttons können sie ganz einfach getestet werden."
+  },
+  "working-examples": {
+    "join": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "pokedex": "Eine einfache Bibliothek, basierend auf der PokéAPI, die Pokemon-Informationen bereitstellt und katalogisiert.",
+    "elpolloloco": "Jump 'n' Run Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen."
+  },
+  "reviews": {
+    "titel": "Brauchen Sie einen Teamplayer?",
+    "beschreibung": "Lesen Sie, was meine Kollegen über mich sagen",
+    "projekt": "Projekt",
+    "review-1": "‘‘Michael ist eine zuverlässige und freundliche Person. Er arbeitet strukturiert und schreibt einen klaren Code. Ich kann ihn als Kollegin sehr empfehlen.’’",
+    "review-2": "‘‘Michael ist ein vertrauenswürdiger Teamplayerin und kann mit dem Stress von Deadlines umgehen. Strukturiertes Arbeiten und klarer Code.’’",
+    "review-3": "‘‘Michael musste in Zusammenarbeit mit den Teammitgliedern Inhalte entwickeln, formatieren und liefern. Er ist eine zuverlässige und freundliche Person.’’"
+  },
+  "skillset": {
+    "titel": "Kompetenzen"
+  },
+  "footer":{
+    "impressum": "Impressum"
+  },
+  "header":{
+    "about": "Über mich",
+    "skillset": "Kompetenzen",
+    "work": "Projekte"
+  }
+}

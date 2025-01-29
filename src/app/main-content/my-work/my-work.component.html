@@ -1,7 +1,7 @@
 <div class="content">
     <section id="my_work">
-        <h2>My work</h2>
-        <span>Explore a selection of my work here - Interact with projects to see my skills in action.</span>
+        <h2>{{ 'my-work.projekte' | translate }}</h2>
+        <span>{{ 'my-work.beschreibung' | translate }}</span>
         <div class="working-examples-div">
             @for(weItem of workingExamplesArr; track weItem.title; let index = $index){
             <app-working-example [workingExample]="weItem"></app-working-example>

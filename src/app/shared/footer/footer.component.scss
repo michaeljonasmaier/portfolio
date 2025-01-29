@@ -19,7 +19,8 @@ footer {
 
     >img {
         height: 69px;
-        width: 69px
+        width: 69px;
+        cursor: pointer;
     }
 
     div {
@@ -43,24 +44,15 @@ footer {
 
             &::after {
                 content: '';
-                /* Erzeugt ein leeres Element */
                 position: absolute;
                 bottom: -5px;
-                /* Direkt unter dem Text */
                 left: 0;
-                /* Startpunkt in der Mitte des Textes */
                 transform: translateX(0) scaleX(0);
-                /* Unsichtbar und zentriert */
                 width: 50%;
-                /* Breite des Unterstrichs (50% des Textes) */
                 height: 2px;
-                /* Höhe des Unterstrichs */
                 background-color: #ffffff;
-                /* Farbe des Unterstrichs */
                 transform-origin: left;
-                /* Transformation erfolgt von der Mitte */
                 transition: all 0.1s ease;
-                /* Sanfte Animation */
                 opacity: 0;
             }
 
@@ -72,8 +64,10 @@ footer {
     }
 
     .socials-div {
-        @include dFlex();
+        @include dFlex(row, flex-end, flex-end);
         gap: 50px;
+        width: 70px;
+        overflow: visible;
 
         >div {
             @include dFlex();
@@ -88,8 +82,24 @@ footer {
     }
 }
 
+@media(max-width: 1000px) {
+    .full-content {
+        @include pd50();
+    }
 
-@media(max-width: 390px) {
+    h4 {
+        font-size: 18px;
+    }
+
+    .footer-content {
+        .socials-div {
+            gap: 20px;
+        }
+    }
+}
+
+
+@media(max-width: 650px) {
     .full-content {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -102,8 +112,7 @@ footer {
         gap: 20px;
 
         .socials-div {
-            gap: 20px;
-
+            width: auto;
         }
     }
 }

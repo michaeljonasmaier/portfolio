@@ -1,19 +1,19 @@
 @import "../../../styles.scss";
 div{
     height: 80px;
-    width: 300px;
+    width: 230px;
 }
 
 
 button {
     position: relative;
     font-family: "Poppins";
-    font-size: 23px;
+    font-size: 20px;
     color: $main_blue;
     background: none;
     border: 2px solid $main_blue;
     border-radius: 12px;
-    padding: 8px 30px 8px 30px;
+    padding: 8px 25px 8px 25px;
     overflow: hidden;
     transform-origin:top left; 
 
@@ -43,12 +43,18 @@ button {
     }
 }
 
-@media(max-width: 390px){
+@media(max-width: 900px){
     div{
         height: auto;
         width: auto;
     }
+}
 
+@media(max-width: 500px){
+    button{
+        font-size: 18px;
+        padding: 8px 20px 8px 20px;
+    }
 }
 
 

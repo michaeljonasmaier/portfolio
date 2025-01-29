@@ -22,8 +22,8 @@ section {
     >div {
         @include dFlex();
         @include pd100();
-        padding-left: 300px;
-        padding-right: 300px;
+        padding-left: 100px;
+        padding-right: 100px;
         gap: 80px;
         flex-wrap: wrap;
     }
@@ -71,11 +71,35 @@ section {
     }
 }
 
+@media(max-width: 1000px) {
+    section{
+        @include pd50();
+
+        >div{
+            padding: 0;
+            gap: 30px;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    section{
+        @include pd20();
+        h1 {
+            font-size: 64px;
+            padding-bottom: 50px;
+        }
+
+    }
+}
+
+
 @media(max-width: 390px) {
     section {
         padding-top: 40px;
-    padding-bottom: 40px;
+        padding-bottom: 40px;
         @include pd20();
+
         h1 {
             font-size: 64px;
             padding-bottom: 50px;
@@ -92,6 +116,7 @@ section {
         gap: 10px;
         width: auto;
         font-size: 14px;
+
         img {
             height: 60px;
             width: 60px;
@@ -100,7 +125,8 @@ section {
 
     .gm {
         width: auto;
-        >img{
+
+        >img {
             height: 60px;
             width: 60px;
         }

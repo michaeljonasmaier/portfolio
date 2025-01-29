@@ -89,6 +89,16 @@ section {
     left: 400px;
 }
 
+@media(max-width: 1000px){
+    section{
+        @include pd50();
+
+        span {
+            width: 100%;
+        }
+    }
+}
+
 @media(max-width: 390px) {
     section {
         @include pd20();

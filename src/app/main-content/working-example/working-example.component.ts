@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { WorkingExample } from '../../interfaces/working-example';
 import { PfBtnComponent } from '../../shared/pf-btn/pf-btn.component';
+import {TranslatePipe, TranslateDirective, TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-working-example',
   standalone: true,
-  imports: [PfBtnComponent],
+  imports: [PfBtnComponent, TranslatePipe, TranslateDirective, TranslateModule],
   templateUrl: './working-example.component.html',
   styleUrl: './working-example.component.scss'
 })

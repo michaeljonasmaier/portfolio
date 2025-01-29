@@ -1,0 +1,16 @@
+@import "../../../styles.scss";
+
+section{
+    @include pd100();
+    margin: 50px 0;
+    font-family: "Montserrat";
+}
+
+p{
+    font-size: 16px;
+}
+
+a{
+    font-family: "Montserrat";
+    text-decoration: none;
+}

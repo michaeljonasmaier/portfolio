@@ -41,6 +41,54 @@ img {
     box-shadow: 5px 5px 15px 0px #00000016;
 }
 
+.button-div{
+    @include dFlex(row, flex-start, center);
+}
+
+@media(max-width: 1100px){
+    section {
+        gap: 50px;
+        
+    }
+}
+
+@media(max-width: 900px){
+    section {
+        @include dFlex(column, center, center);
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        >div {
+            width: 100%;
+        }
+        >.info-div{
+            @include dFlex(column, center, center);
+            .button-div{
+                gap: 50px;
+            }
+        }
+    }
+
+    .reverse{
+        flex-direction: column;
+        text-align: center;
+        >.info-div{
+            @include dFlex(column, center, center);
+        }
+    }
+}
+
+@media(max-width: 500px){
+    section {
+        >.info-div{
+            .button-div{
+                gap: 20px;
+            }
+        }
+    }
+}
+
 @media(max-width: 390px){
     section {
         @include dFlex(column, center, center);

@@ -24,6 +24,10 @@ span {
     font-size: 32px;
 }
 
+.scroll-wrapper{
+    width: 100%;
+}
+
 .review-div {
     @include dFlex();
     @include pd100();
@@ -53,7 +57,7 @@ span {
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 900px) {
     section {
         @include dFlex(column, flex-start, flex-start);
         padding-top: 40px;
@@ -92,9 +96,21 @@ span {
 
     .review-div {
         gap: 50px;
-        width: 200%;
+        width: 120%;
         padding-left: 50px;
         padding-right: 50px;
         margin-top: 40px;
+    }
+}
+
+@media(max-width: 500px){
+    .review-div {
+        width: 160%;
+    }
+}
+
+@media(max-width: 390px){
+    .review-div {
+        width: 200%;
     }
 }

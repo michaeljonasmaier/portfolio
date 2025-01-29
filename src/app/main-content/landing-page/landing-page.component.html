@@ -1,18 +1,21 @@
 <div class="gradient-div">
     <section>
-        <img class="profile-img" src="/assets/landing-page/photo.png" alt="">
-        <img class="background-ellipse" src="/assets/landing-page/ellipse.png" alt="">
-        <span class="scroll-msg">Scroll down &rarr;</span>
-        <div>
+        <div class="left-div">
+            <img class="profile-img" src="/assets/landing-page/photo.png" alt="">
+            <img class="background-ellipse" src="/assets/landing-page/ellipse.png" alt="">
+            <span class="scroll-msg">Scroll down &rarr;</span>
+        </div>
+        
+        <div class="right-div">
             <div class="landing-top-div">
-                <span class="greeting">Hello! I am Michael</span>
+                <span class="greeting">{{ 'landing-page.begruessung' | translate }}</span>
                 <h1>FRONTEND DEVELOPER</h1>
             </div>
             <div class="landing-bottom-div">
                 <div></div>
                 <div>
-                    <span>SCROLL</span>
-                    <img src="/assets/landing-page/line.png" alt="">
+                    <span>{{ 'landing-page.scrollen' | translate }}</span>
+                    <img class="scroll-line" src="/assets/landing-page/line.png" alt="">
                 </div>
                 <div class="socials-div">
                     <a href="https://github.com/michaeljonasmaier" target="_blank">

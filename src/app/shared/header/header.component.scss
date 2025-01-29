@@ -1,60 +1,133 @@
 @import "../../../styles.scss";
 
-header{
+header {
     width: 100%
 }
-section{
+
+section {
     @include dFlex(row, space-between, center);
     @include pd100();
     @include maxWidth();
     height: 117px;
     z-index: 10;
     position: relative;
-    >.logo{
+
+    >.logo {
         height: 69px;
-        width: 69px
-    } 
+        width: 69px;
+        cursor: pointer;
+    }
 }
 
-.nav-links{
+.nav-links {
     @include dFlex();
     gap: 30px;
 }
 
-.nav-link{
+.nav-link {
     color: $main_blue;
     text-decoration: none;
     font-family: "Montserrat";
     font-size: 23px;
-    width: 120px;
+    width: 150px;
     text-align: center;
-    &:hover{
+
+    &:hover {
         font-weight: 500;
     }
 }
 
-.burger-menu{
-    display: none;
-    width: 30px;
+.burger-menu {
+    width: 32px;
     height: 30px;
+    display: none;
+    gap: 10px;
+
+    .a,
+    .b,
+    .c {
+        transition: all 300ms ease-out;
+        display: none;
+    }
+
+    .a.animate-a {
+        transform: rotate(40deg) translateY(-6px);
+        transform-origin: left;
+    }
+
+    .b.animate-b {
+        display: none;
+    }
+
+    .c.animate-c {
+        transform: rotate(-40deg) translateY(6px);
+        transform-origin: top left;
+    }
+
 }
 
-@media(max-width: 390px){
-    section{
+.burger-menu-div {
+    position: absolute;
+    @include dFlex();
+    transition: transform 0.2s ease-in-out;
+    transform: translateX(-300%);
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #edf2ff, #ffffff);
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    z-index: -1;
+
+    &.open {
+        transform: translateX(0);
+    }
+}
+
+.nav-links-mobile {
+    @include dFlex(column, center, center);
+    gap: 20px;
+    height: 50vh;
+}
+
+@media(max-width: 1100px) {
+    section {
+        @include pd50();
+    }
+}
+
+@media(max-width: 1000px) {
+    .nav-links {
+        gap: 5px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 800px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+
+        .a, .b, .c{
+            display: block;
+        }
+    }
+}
+
+@media(max-width: 390px) {
+    section {
         @include pd20();
-        .logo{
+
+        .logo {
             height: 58px;
             width: 58px;
         }
     }
-
-    .nav-links{
-        display: none;
-    }
-
-    .burger-menu{
-        display: block;
-    }
-
-    
 }

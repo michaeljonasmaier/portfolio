@@ -60,6 +60,7 @@ h2 {
 .bubble-m,
 .bubble-s {
     position: absolute;
+    z-index: -1000;
 }
 
 .bubble-l {
@@ -77,10 +78,18 @@ h2 {
     left: 90%;
 }
 
-@media(max-width: 390px) {
+@media(max-width: 1500px){
     section {
-        @include pd20();
+        >div {
+            gap: 100px;
+        }
+    }
+}
 
+@media(max-width: 900px) {
+    section {
+        @include pd50();
+        padding-top: 50px;
         >div {
             @include dFlex(column, center, center);
             padding-top: 30px;
@@ -107,6 +116,10 @@ h2 {
     .bubble-l {
         display: none;
     }
+}
 
-
+@media (max-width: 390px){
+    section{
+        @include pd20();
+    }
 }

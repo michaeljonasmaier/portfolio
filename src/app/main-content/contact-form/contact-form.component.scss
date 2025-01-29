@@ -202,7 +202,31 @@ form:valid .submit-btn {
     }
 }
 
-@media(max-width: 390px) {
+@media(max-width: 1300px){
+    .input-div,
+    .textarea-div {
+        width: 500px;
+
+        >input,
+        textarea {
+            width: calc(100% - 50px);
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .input-div,
+    .textarea-div {
+        width: 400px;
+
+        >input,
+        textarea {
+            width: calc(100% - 50px);
+        }
+    }
+}
+
+@media(max-width: 900px) {
 
     .input-div,
     .textarea-div {

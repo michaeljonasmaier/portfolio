@@ -13,10 +13,15 @@
                 }
             }
         </h4>
-        <p>{{workingExample.description}}</p>
-        <a href="{{workingExample.link}}" target="_blank">
-            <app-pf-btn title="Github"></app-pf-btn>
-        </a>
+        <p>{{ workingExample.description | translate }}</p>
+        <div class="button-div">
+            <a href="{{workingExample.link}}" target="_blank">
+                <app-pf-btn title="Github"></app-pf-btn>
+            </a>
+            <a href="https://elpolloloco.maiermichael.com" target="_blank">
+                <app-pf-btn title="Live test"></app-pf-btn>
+            </a>
+        </div>
         
     </div>
 </section>

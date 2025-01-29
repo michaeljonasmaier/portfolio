@@ -1,11 +1,23 @@
 <header id="header">
     <section class="header-sec">
-        <img class="logo" src="assets/landing-page/logo_placeholder.png" alt="">
+        <img class="logo" routerLink="" src="assets/landing-page/logo_placeholder.png" alt="">
         <div class="nav-links">
-            <a class="nav-link" href="#about_me">About me</a>
-            <a class="nav-link" href="#skillset">Skillset</a>
-            <a class="nav-link" href="#my_work">My work</a>
+            <a class="nav-link" href="#about_me">{{ 'header.about' | translate }}</a>
+            <a class="nav-link" href="#skillset">{{ 'header.skillset' | translate }}</a>
+            <a class="nav-link" href="#my_work">{{ 'header.work' | translate }}</a>
         </div>
-        <img class="burger-menu" src="/assets/landing-page/burger_menu.png" alt="">        
+        <div class="burger-menu" (click) ="toggleMenu()">
+            <img class="a" src="./assets/landing-page/Vector 6.png" [ngClass]="{ 'animate-a': menuOpen }" alt="">
+            <img class="b" src="./assets/landing-page/Vector 6.png" [ngClass]="{ 'animate-b': menuOpen }" alt="">
+            <img class="c" src="./assets/landing-page/Vector 6.png" [ngClass]="{ 'animate-c': menuOpen }" alt="">
+        </div>
+        <div class="burger-menu-div" [class.open]="menuOpen">
+            <div class="nav-links-mobile">
+                <a class="nav-link" (click) ="toggleMenu()" href="#about_me">About me</a>
+                <a class="nav-link" (click) ="toggleMenu()" href="#skillset">Skillset</a>
+                <a class="nav-link" (click) ="toggleMenu()" href="#my_work">My work</a>
+                <a class="nav-link" (click) ="toggleMenu()" href="#contact">Contact</a>
+            </div>
+        </div>     
     </section>
 </header>

@@ -1,16 +1,16 @@
 <div class="background-gradient">
     <section>
         <div>
-            <h3>Need a teamplayer?</h3>
-            <span>Hear what my colleagues said about me</span>
+            <h3>{{ 'reviews.titel' | translate }}</h3>
+            <span>{{ 'reviews.beschreibung' | translate }}</span>
         </div>
         <div class="scroll-wrapper">
             <div class="review-div">
                 @for (reviewItem of reviewsArr; track reviewItem){
                 <div class="review-item">
                     <h5>{{reviewItem.name}}</h5>
-                    <span>Project {{reviewItem.project}}</span>
-                    <p>{{reviewItem.text}}</p>
+                    <span>{{ 'reviews.projekt' | translate }} {{reviewItem.project}}</span>
+                    <p>{{reviewItem.text | translate}}</p>
                 </div>
                 }
             </div>
