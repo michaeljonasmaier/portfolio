@@ -57,6 +57,7 @@
   "header":{
     "about": "Über mich",
     "skillset": "Kompetenzen",
-    "work": "Projekte"
+    "work": "Projekte",
+    "contact": "Kontakt"
   }
 }

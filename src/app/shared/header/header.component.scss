@@ -37,11 +37,23 @@ section {
     }
 }
 
+.language-icon{
+    height: 39px;
+    width: 39px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
 .burger-menu {
     width: 32px;
     height: 30px;
     display: none;
     gap: 10px;
+    &:hover{
+        cursor: pointer;
+    }
 
     .a,
     .b,
@@ -103,6 +115,7 @@ section {
 
     .nav-link {
         font-size: 18px;
+        width: 120px;
     }
 }
 

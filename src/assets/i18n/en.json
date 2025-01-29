@@ -1,21 +1,63 @@
 {
-    "about-me": {
-      "hello": "hello {{value}}",
-      "title": "Translation Demo"
-    },
-    "landing-page":{
-
-    },
-    "contact":{
-
-    },
-    "my-work":{
-
-    },
-    "reviews":{
-
-    },
-    "skillset":{
-
-    }
+  "about-me": {
+    "title": "Let's work together!",
+    "title-2": "I am",
+    "wohnsitz": "located in Stuttgart",
+    "remote": "open to work remote",
+    "umzug": "open to relocate",
+    "beschreibung": "I am a Front-end developer based in Stuttgart, Germany. I enjoy helping designers and companies bring their ideas into real life.  I am looking forward to continuing my developer career with a job in a junior web developer position. My ability to solve complex problems and my passion for programming make me a valuable member for your team.",
+    "beschreibung-2": "If you think I’d be a good match for your projects, contact me!",
+    "kontakt": "Send a message"
+  },
+  "landing-page": {
+    "scrollen": "Scroll",
+    "begruessung": "Hello! I am Michael"
+  },
+  "contact": {
+    "titel": "Contact",
+    "problem": "Got a problem to solve?",
+    "beschreibung": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "frage": "Need a Frontend developer? ",
+    "frage-2": "Contact me!",
+    "privacy": "I've read the ",
+    "privacy-2": "privacy policy ",
+    "privacy-3": "and agree to the processing of my data as outlined.",
+    "button": "Say hello ;)",
+    "name": "Your name",
+    "email": "Your email",
+    "nachricht": "Your message",
+    "name-iv": "Your name is required",
+    "email-iv": "Your email is required",
+    "nachricht-iv": "Your message is empty",
+    "privacy-iv": "Please accept the privacy policy."
+  },
+  "my-work": {
+    "projekte": "My work",
+    "beschreibung": "Explore a selection of my work here - Interact with projects to see my skills in action."
+  },
+  "working-examples": {
+    "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
+    "pokedex": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+    "elpolloloco": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
+  },
+  "reviews": {
+    "titel": "Need a teamplayer? ",
+    "beschreibung": "Hear what my colleagues said about me",
+    "projekt": "Project",
+    "review-1": "‘‘Michael is a reliable and friendly person. Work in a structured way and write a clear code. I  highly recommend him as a colleague.’’",
+    "review-2": "‘‘Michael is a trustworthy teamplayer and can cope with the stress of deadlines. Structured work and clear code.’’",
+    "review-3": "‘’Michael had to develop, format and deliver content in collaboration with the team members. He is a reliable and friendly person.’’"
+  },
+  "skillset": {
+    "titel": "Skill set"
+  },
+  "footer":{
+    "impressum": "Legal Notice"
+  },
+  "header":{
+    "about": "About me",
+    "skillset": "Skill set",
+    "work": "My work",
+    "contact": "Contact"
   }
+}

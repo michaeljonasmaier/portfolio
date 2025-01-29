@@ -5,6 +5,7 @@
             <a class="nav-link" href="#about_me">{{ 'header.about' | translate }}</a>
             <a class="nav-link" href="#skillset">{{ 'header.skillset' | translate }}</a>
             <a class="nav-link" href="#my_work">{{ 'header.work' | translate }}</a>
+            <img [src]="language == 'de' ? 'assets/landing-page/en_icon.png' : 'assets/landing-page/de_icon.png'" (click)="changeLanguage()" class="language-icon" alt="">
         </div>
         <div class="burger-menu" (click) ="toggleMenu()">
             <img class="a" src="./assets/landing-page/Vector 6.png" [ngClass]="{ 'animate-a': menuOpen }" alt="">
@@ -13,10 +14,11 @@
         </div>
         <div class="burger-menu-div" [class.open]="menuOpen">
             <div class="nav-links-mobile">
-                <a class="nav-link" (click) ="toggleMenu()" href="#about_me">About me</a>
-                <a class="nav-link" (click) ="toggleMenu()" href="#skillset">Skillset</a>
-                <a class="nav-link" (click) ="toggleMenu()" href="#my_work">My work</a>
-                <a class="nav-link" (click) ="toggleMenu()" href="#contact">Contact</a>
+                <a class="nav-link" (click) ="toggleMenu()" href="#about_me">{{ 'header.about' | translate }}</a>
+                <a class="nav-link" (click) ="toggleMenu()" href="#skillset">{{ 'header.skillset' | translate }}</a>
+                <a class="nav-link" (click) ="toggleMenu()" href="#my_work">{{ 'header.work' | translate }}</a>
+                <a class="nav-link" (click) ="toggleMenu()" href="#contact">{{ 'header.contact' | translate }}</a>
+                <img [src]="language == 'de' ? 'assets/landing-page/en_icon.png' : 'assets/landing-page/de_icon.png'" (click)="toggleMenu(); changeLanguage()" class="language-icon" alt="">
             </div>
         </div>     
     </section>
