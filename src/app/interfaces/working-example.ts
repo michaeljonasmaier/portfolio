@@ -5,4 +5,5 @@ export interface WorkingExample {
     description: string;
     reverse: boolean;
     link: string;
+    testlink: string;
 }

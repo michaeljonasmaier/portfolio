@@ -31,7 +31,6 @@ export class HeaderComponent {
   changeLanguage() {
     if (this.language == "de") {
       this.language = "en";
-      console.log( this.language )
       this.translate.use('en');
     } else {
       this.language = "de";

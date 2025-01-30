@@ -22,6 +22,7 @@ export class MyWorkComponent {
         description: "working-examples.join",
         reverse: false,
         link: "https://github.com/michaeljonasmaier/DANotes",
+        testlink: "https://elpolloloco.maiermichael.com"
       },
       {
         imgPath: "/assets/my-work/Pokedex.png",
@@ -30,6 +31,7 @@ export class MyWorkComponent {
         description: "working-examples.pokedex",
         reverse: true,
         link: "https://github.com/michaeljonasmaier/Pokedex",
+        testlink: "https://pokedex.maiermichael.com"
       },
       {
         imgPath: "/assets/my-work/Pollo Loco.png",
@@ -38,6 +40,7 @@ export class MyWorkComponent {
         description: "working-examples.elpolloloco",
         reverse: false,
         link: "https://github.com/michaeljonasmaier/El-Pollo-Loco",
+        testlink: "https://elpolloloco.maiermichael.com"
       }
     ]
   }

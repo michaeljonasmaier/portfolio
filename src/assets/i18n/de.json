@@ -51,13 +51,16 @@
   "skillset": {
     "titel": "Kompetenzen"
   },
-  "footer":{
+  "footer": {
     "impressum": "Impressum"
   },
-  "header":{
+  "header": {
     "about": "Über mich",
     "skillset": "Kompetenzen",
     "work": "Projekte",
     "contact": "Kontakt"
+  },
+  "imprint": {
+    "imprint": "<h3>Impressum</h3><span>Angaben gemäß § 5 DDG</span><span>Michael Maier <br>Olgastraße 141<br>70180 Stuttgart <br></span><span> <strong>Vertreten durch: </strong><br>Michael Maier<br></span><span><strong>Kontakt:</strong> <br>Telefon: 017634420819<br>E-Mail: <a href='mailto:michael-maier@live.de'>michael-maier&#64;live.de</a></span><span><br><strong>Datenschutz</strong><br><br>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit aufunseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden,erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. <br>Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. <br> Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br> </span><br> Impressum vom <a href='https://www.impressum-generator.de'>Impressum Generator</a> der <ahref='https://www.kanzlei-hasselbach.de/rechtsgebiete/familienrecht/'>Kanzlei Hasselbach, Fachanwälte für Familienrecht</a>"
   }
 }
