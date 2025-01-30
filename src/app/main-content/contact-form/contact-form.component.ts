@@ -47,10 +47,8 @@ export class ContactFormComponent{
 
   onSubmit() {
     this.contactData = this.contactForm.value;
-    console.log(this.contactData);
     var checkbox = <HTMLInputElement>document.getElementById("errmsg");
     if(!this.contactForm.valid){
-      console.log(this.contactData);
       checkbox.classList.add("show");
     } else{
       checkbox.classList.remove("show");

@@ -24,8 +24,21 @@ span {
     font-size: 32px;
 }
 
-.scroll-wrapper{
+.scroll-wrapper {
     width: 100%;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.433);
+    border-radius: 10px;
 }
 
 .review-div {
@@ -62,7 +75,8 @@ span {
         @include dFlex(column, flex-start, flex-start);
         padding-top: 40px;
         padding-bottom: 40px;
-        >div{
+
+        >div {
             width: 100%;
         }
     }
@@ -103,13 +117,13 @@ span {
     }
 }
 
-@media(max-width: 500px){
+@media(max-width: 500px) {
     .review-div {
         width: 160%;
     }
 }
 
-@media(max-width: 390px){
+@media(max-width: 390px) {
     .review-div {
         width: 200%;
     }

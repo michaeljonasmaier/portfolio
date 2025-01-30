@@ -4,7 +4,7 @@ form {
     @include dFlex(column, center, flex-start);
     gap: 30px;
     text-align: left;
-
+    width: 680px;
     .message-input {
         height: 202px;
     }
@@ -203,6 +203,10 @@ form:valid .submit-btn {
 }
 
 @media(max-width: 1300px){
+    form{
+        width: 500px;
+    }
+
     .input-div,
     .textarea-div {
         width: 500px;
@@ -215,6 +219,10 @@ form:valid .submit-btn {
 }
 
 @media(max-width: 1000px){
+    form{
+        width: 400px;
+    }
+
     .input-div,
     .textarea-div {
         width: 400px;
@@ -227,6 +235,9 @@ form:valid .submit-btn {
 }
 
 @media(max-width: 900px) {
+    form{
+        width: 100%;
+    }
 
     .input-div,
     .textarea-div {
