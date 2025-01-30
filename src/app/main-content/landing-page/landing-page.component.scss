@@ -26,6 +26,7 @@ h1{
 
 .profile-img{
     height: 100%;
+    padding-left: 150px;
     aspect-ratio: 3 / 4;
 }
 
@@ -111,6 +112,19 @@ h1{
     right: 10px;
 }
 
+@media(max-width: 1750px){
+    .profile-img{
+        padding-left: 50px;
+    }
+}
+
+@media(max-width: 1550px){
+    .profile-img{
+        padding-left: 0;
+    }
+}
+
+
 
 @media(max-width: 1300px){
     .background-ellipse{
@@ -127,16 +141,6 @@ h1{
 }
 
 @media(max-width: 1200px){
-    h1{
-        font-size: 100px;
-    }
-
-    .greeting{
-        font-size: 40px;
-    }
-}
-
-@media(max-width: 1100px){
     section{
         max-height: 800px;
     }
@@ -152,6 +156,10 @@ h1{
     .greeting{
         font-size: 30px;
     }
+}
+
+@media(max-width: 1100px){
+   
 }
 
 @media(max-width: 1000px){

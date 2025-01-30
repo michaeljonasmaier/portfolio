@@ -150,10 +150,23 @@ section {
 
     .right-div {
         padding-top: 40px;
-        align-items: center
+        align-items: center;
     }
 
-    ;
+    .big-ellipse {
+        position: absolute;
+        height: 156px;
+        top: -78px;
+        left: calc(50% - 78px);
+    }
+
+    .small-ellipse {
+        height: 61px;
+        width: 61px;
+        top: 25px;
+        left: calc(100% / 4 * 3);
+    }
+
 }
 
 @media(max-width: 700px) {
@@ -176,20 +189,6 @@ section {
         @include pd20();
         overflow: visible;
         padding-top: 130px;
-    }
-
-    .big-ellipse {
-        height: 156px;
-        width: 156px;
-        top: -78px;
-        left: calc(50% - 78px);
-    }
-
-    .small-ellipse {
-        height: 61px;
-        width: 61px;
-        top: 25px;
-        left: calc(100% / 4 * 3);
     }
 
     .left-div {
