@@ -14,19 +14,13 @@ form {
     font-family: "Montserrat";
     font-size: 14px;
     color: #E61C40;
-    visibility: hidden;
     padding-top: 5px;
-}
-
-.error-img {
-    position: absolute;
-    left: 93%;
-    top: 7px;
 }
 
 .valid-img {
-    visibility: hidden;
-    padding-top: 5px;
+    position: absolute;
+    top: 13px;
+    left: calc(100% - 50px);
 }
 
 .input-div,
@@ -69,22 +63,18 @@ form {
         &::placeholder {
             color: transparent;
         }
-
-        &:user-invalid~.error-message {
-            visibility: visible;
-        }
-
-        &:user-valid~.valid-img {
-            visibility: visible;
-        }
-
-        /* 
-        &:focus:invalid ~ .error-message{
-            visibility: visible;
-        } */
     }
 
-    input:focus+label,
+    input:focus+label, input:not(:placeholder-shown)+label, textarea:focus+label, textarea:not(:placeholder-shown)+label {
+        z-index: 1;
+        transition: all 300ms ease-out;
+        transform: translateY(-26px) translateX(-10px);
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    
+
+   /*  input:focus+label,
     input:valid+label,
     textarea:focus+label,
     textarea:valid+label {
@@ -93,21 +83,16 @@ form {
         transform: translateY(-26px) translateX(-10px);
         padding-left: 3px;
         padding-right: 3px;
-    }
+    } */
 }
 
 .textarea-div {
-    height: 240px;
+    height: 150px;
 }
 
 .checkbox-div {
-    @include dFlex(column, center, flex-start);
-
-    /*  .checkbox-input-div{
-        @include dFlex();
-        border-radius: 50%;
-        background-color: #D4E0FF;
-    } */
+    @include dFlex(column, flex-start, flex-start);
+    height: 56px;
     >div {
         @include dFlex();
         gap: 10px;
@@ -215,6 +200,11 @@ form:valid .submit-btn {
         textarea {
             width: calc(100% - 50px);
         }
+    }
+
+    .valid-img {
+        top: 13px;
+        left: calc(100% - 40px);
     }
 }
 

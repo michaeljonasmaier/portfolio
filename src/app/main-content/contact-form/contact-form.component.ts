@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { PfBtnComponent } from '../../shared/pf-btn/pf-btn.component';
-import { FormsModule, FormGroup, FormBuilder, Validators, FormControl, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, FormGroup, FormBuilder, Validators, FormControl, ReactiveFormsModule, NgForm } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import {TranslatePipe, TranslateDirective, TranslateModule} from "@ngx-translate/core";
@@ -20,9 +20,8 @@ export class ContactFormComponent{
     name: "",
     email: "",
     message: "",
+    checked: false,
   }
-
-  contactForm: FormGroup; // Deklaration des Formulars
 
   mailTest = false;
 
@@ -37,37 +36,21 @@ export class ContactFormComponent{
     },
   };
 
-  constructor(private fb: FormBuilder) {
-    this.contactForm = this.fb.group({
-      name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required]
-    });   
-  }
 
-  onSubmit() {
-    this.contactData = this.contactForm.value;
-    var checkbox = <HTMLInputElement>document.getElementById("errmsg");
-    if(!this.contactForm.valid){
-      checkbox.classList.add("show");
-    } else{
-      checkbox.classList.remove("show");
-    }
-
-    if (this.contactForm.valid && !this.mailTest) {
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
-            this.contactForm.reset();
+            ngForm.reset();
           },
           error: (error) => {
             console.error(error);
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (this.contactForm.valid && this.mailTest) {
-      this.contactForm.reset();
+    } else if (ngForm.valid && this.mailTest) {
+      ngForm.reset();
     }
   }
 
