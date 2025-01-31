@@ -1,8 +1,8 @@
 <section [className]="workingExample.reverse ? 'reverse' : ''">
-    <div class="img-div">
+    <div class="img-div" data-aos="fade-right">
         <img src={{workingExample.imgPath}} alt="">
     </div>
-    <div class="info-div">
+    <div class="info-div" data-aos="fade-left">
         <h3>{{workingExample.title}}</h3>
         <h4>
             @for(softwareItem of workingExample.software; track softwareItem; let index = $index){
@@ -22,6 +22,5 @@
                 <app-pf-btn title="Live test"></app-pf-btn>
             </a>
         </div>
-        
     </div>
 </section>

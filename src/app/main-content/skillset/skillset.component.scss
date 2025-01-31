@@ -72,10 +72,10 @@ section {
 }
 
 @media(max-width: 1000px) {
-    section{
+    section {
         @include pd50();
 
-        >div{
+        >div {
             padding: 0;
             gap: 30px;
         }
@@ -83,8 +83,9 @@ section {
 }
 
 @media(max-width: 600px) {
-    section{
+    section {
         @include pd20();
+
         h1 {
             font-size: 64px;
             padding-bottom: 50px;
@@ -130,6 +131,13 @@ section {
             height: 60px;
             width: 60px;
         }
+
+        &:hover {
+            .gm-hover-img {
+                display: none;
+            }
+        }
     }
+
 
 }

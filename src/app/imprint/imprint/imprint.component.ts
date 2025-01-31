@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
 import { TranslatePipe, TranslateDirective, TranslateModule, TranslateService } from "@ngx-translate/core";
 
 @Component({
@@ -9,6 +9,8 @@ import { TranslatePipe, TranslateDirective, TranslateModule, TranslateService } 
   styleUrl: './imprint.component.scss'
 })
 export class ImprintComponent {
-
+  ngOnInit() {
+    window.scrollTo(0, 0); // Scrollt nach oben
+  }
     
 }

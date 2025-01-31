@@ -3,7 +3,7 @@
         <h1>{{ 'skillset.titel' | translate }}</h1>
         <div>
             @for(skill of skills; track skill){
-            <div class="skill-item">
+            <div class="skill-item" data-aos="fade-left" data-aos-duration="4000">
                 <img src="/assets/skills/{{skill}}.png" alt="{{skill}}">
                 <span>{{skill}}</span>
             </div>

@@ -49,25 +49,32 @@
         <div class="checkbox-div">
             <div>
                 <div class="checkbox-input-div">
-                    <input #checked="ngModel" [(ngModel)]="contactData.checked" type="checkbox" name="checkbox" id="checkbox" required>
+                    <input #checked="ngModel" [(ngModel)]="contactData.checked" type="checkbox" name="checkbox"
+                        id="checkbox" required>
                 </div>
                 <span for="checkbox">{{ 'contact.privacy' | translate }}<a routerLink="/imprint">{{ 'contact.privacy-2'
                         | translate }}</a> {{ 'contact.privacy-3' | translate }}</span>
             </div>
             @if(!checked.valid && checked.touched){
-                <span class="error-message" id="errmsg">{{ 'contact.privacy-iv' | translate }}</span>
+            <span class="error-message" id="errmsg">{{ 'contact.privacy-iv' | translate }}</span>
             }
         </div>
 
         <div class="button-div">
             <div class="submit-btn-div ">
                 @if (contactForm.valid){
-                    <button type="submit" class="submit-btn">{{ 'contact.button' | translate }}</button>
-                    } @else {
-                    <button type="submit" class="submit-btn" disabled>{{ 'contact.button' | translate }}</button>
-                    }
-            </div>  
+                <button type="submit" class="submit-btn">{{ 'contact.button' | translate }}</button>
+                } @else {
+                <button type="submit" class="submit-btn" disabled>{{ 'contact.button' | translate }}</button>
+                }
+            </div>
         </div>
+        <div class="send-msg-div">
+            @if(contactForm.submitted){
+                <span class="send-msg">{{ 'contact.send' | translate }}</span>
+            } 
+        </div>
+
 
     </form>
 </section>

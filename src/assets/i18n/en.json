@@ -29,7 +29,8 @@
     "name-iv": "Your name is required",
     "email-iv": "Your email is required",
     "nachricht-iv": "Your message is empty",
-    "privacy-iv": "Please accept the privacy policy."
+    "privacy-iv": "Please accept the privacy policy.",
+    "send": "Thanks for your message! I will reach out to you as soon as possible."
   },
   "my-work": {
     "projekte": "My work",

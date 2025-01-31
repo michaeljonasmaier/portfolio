@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {TranslatePipe, TranslateDirective, TranslateModule} from "@ngx-translate/core";
+import 'aos/dist/aos.css';
 @Component({
   selector: 'app-skillset',
   standalone: true,

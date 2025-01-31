@@ -23,6 +23,18 @@ form {
     left: calc(100% - 50px);
 }
 
+.send-msg-div{
+    height: 25px;
+    width: 80%;
+}
+
+.send-msg{
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: #52aa12;
+    padding-top: 5px;
+}
+
 .input-div,
 .textarea-div {
     position: relative;
@@ -63,7 +75,16 @@ form {
         &::placeholder {
             color: transparent;
         }
+
     }
+
+    input:-webkit-autofill {
+        -webkit-box-shadow:0 0 0 50px white inset; /* Change the color to your own background color */
+    }
+    
+    input:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0 50px white inset;/*your box-shadow*/
+    } 
 
     input:focus+label, input:not(:placeholder-shown)+label, textarea:focus+label, textarea:not(:placeholder-shown)+label {
         z-index: 1;
@@ -206,6 +227,10 @@ form:valid .submit-btn {
         top: 13px;
         left: calc(100% - 40px);
     }
+
+    .send-msg-div{
+        width: 80%;
+    }
 }
 
 @media(max-width: 1000px){
@@ -255,4 +280,20 @@ form:valid .submit-btn {
     .error-img {
         left: 90%;
     }
+
+    .send-msg-div{
+        width: 100%;
+        height: 64px;
+    }
+}
+
+@media(max-width: 450px){
+   .checkbox-div{
+    height: 85px;
+   }
+
+   .send-msg-div{
+    width: 100%;
+    height: 81px;
+}
 }
