@@ -21,8 +21,8 @@ export class MyWorkComponent {
         software: ["Angular", "TypeScript", "HTML", "CSS", "Firebase"],
         description: "working-examples.join",
         reverse: false,
-        link: "https://github.com/michaeljonasmaier/DANotes",
-        testlink: "https://elpolloloco.maiermichael.com"
+        link: "https://github.com/michaeljonasmaier/Join",
+        testlink: "https://join.maiermichael.com/#/"
       },
       {
         imgPath: "/assets/my-work/Pokedex.png",

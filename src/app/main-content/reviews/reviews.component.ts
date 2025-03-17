@@ -14,13 +14,13 @@ export class ReviewsComponent {
   constructor(private translate: TranslateService){
     this.reviewsArr = [
       {
-        name: "James Rugman",
-        project: "Join",
+        name: "Marcel Steffen",
+        project: "Kochwelt",
         text: "reviews.review-1"
       },
       {
-        name: "Evelyn Marx",
-        project: "Pokedex",
+        name: "Mariia Ivanova",
+        project: "Join",
         text: "reviews.review-2"
       },
       {
