@@ -16,7 +16,7 @@
   "contact": {
     "titel": "Kontakt",
     "problem": "Sie haben ein Problem zu lösen?",
-    "beschreibung": "Kontaktieren Sie mich über dieses Formular. Ich freue mich darauf, von Ihren Ideen zu hören und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "beschreibung": "Ich freue mich darauf, von Ihren Ideen zu hören und mit meiner Arbeit zu Ihren Projekten beizutragen.",
     "frage": "Sie brauchen einen Frontend-Entwickler? ",
     "frage-2": "Kontaktieren Sie mich!",
     "privacy": "Ich habe die ",
@@ -37,17 +37,18 @@
     "beschreibung": "Entdecken Sie hier eine Auswahl meiner Projekte - durch klicken auf die Buttons können sie ganz einfach getestet werden."
   },
   "working-examples": {
-    "join": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "dabubble": "Die DABubble ist ein Business Chat Client, in dem man in selbst erstellten Gruppenkanälen und Direktnachrichten mit Kollegen kommunizieren kann. ",
+    "join": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
     "pokedex": "Eine einfache Bibliothek, basierend auf der PokéAPI, die Pokemon-Informationen bereitstellt und katalogisiert.",
     "elpolloloco": "Jump 'n' Run Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen."
   },
   "reviews": {
     "titel": "Brauchen Sie einen Teamplayer?",
-    "beschreibung": "Lesen Sie, was meine Kollegen über mich sagen",
+    "beschreibung": "Das sagen meine Kollegen über mich",
     "projekt": "Projekt",
     "review-1": "‘‘Michael hat durch sein Medientechnikstudium ein breites Fachwissen erworben, das zeigt sich deutlich. Mit seinem analytischen Denken und seiner Kompetenz kann er innerhalb der Gruppe problemlos eine Führungsrolle übernehmen.’’",
     "review-2": "‘‘Eine große Führungspersönlichkeit, fleißig und immer für andere da.’’",
-    "review-3": "‘‘Michael musste in Zusammenarbeit mit den Teammitgliedern Inhalte entwickeln, formatieren und liefern. Er ist eine zuverlässige und freundliche Person.’’"
+    "review-3": "‘‘Michael arbeitet mit einer beeindruckenden Professionalität und einem außergewöhnlichen Blick für Details. Wenn er eine Aufgabe übernimmt, kann man sich darauf verlassen, dass sie von Anfang an nahezu perfekt umgesetzt wird – Nachbesserungen sind selten nötig. Seine präzise und qualitativ hochwertige Arbeit macht ihn zu einem wertvollen Teammitglied. Zudem ist er nicht nur äußerst kompetent, sondern auch unglaublich freundlich und bescheiden, was die Zusammenarbeit mit ihm besonders angenehm macht.’’"
   },
   "skillset": {
     "titel": "Skills"

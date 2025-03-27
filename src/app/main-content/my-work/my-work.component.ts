@@ -16,11 +16,21 @@ export class MyWorkComponent {
   constructor(private translate: TranslateService){
     this.workingExamplesArr = [
       {
+        imgPath: "/assets/my-work/DABubble.png",
+        title: "DABubble",
+        software: ["Angular", "TypeScript", "HTML", "CSS", "Firebase"],
+        description: "working-examples.dabubble",
+        reverse: false,
+        link: "https://github.com/SasToepfer/dabubble",
+        testlink: "https://join.maiermichael.com/#/",
+        comingsoon: true,
+      },
+      {
         imgPath: "/assets/my-work/Join.png",
         title: "Join",
         software: ["Angular", "TypeScript", "HTML", "CSS", "Firebase"],
         description: "working-examples.join",
-        reverse: false,
+        reverse: true,
         link: "https://github.com/michaeljonasmaier/Join",
         testlink: "https://join.maiermichael.com/#/"
       },
@@ -29,7 +39,7 @@ export class MyWorkComponent {
         title: "Pokedex",
         software: ["JavaScript", "HTML", "CSS", "Api"],
         description: "working-examples.pokedex",
-        reverse: true,
+        reverse: false,
         link: "https://github.com/michaeljonasmaier/Pokedex",
         testlink: "https://pokedex.maiermichael.com"
       },
@@ -38,7 +48,7 @@ export class MyWorkComponent {
         title: "Pollo Loco",
         software: ["JavaScript", "HTML", "CSS"],
         description: "working-examples.elpolloloco",
-        reverse: false,
+        reverse: true,
         link: "https://github.com/michaeljonasmaier/El-Pollo-Loco",
         testlink: "https://elpolloloco.maiermichael.com"
       }

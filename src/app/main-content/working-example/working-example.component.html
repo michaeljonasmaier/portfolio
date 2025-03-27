@@ -18,9 +18,14 @@
             <a href="{{workingExample.link}}" target="_blank">
                 <app-pf-btn title="Github"></app-pf-btn>
             </a>
-            <a href="{{workingExample.testlink}}" target="_blank">
-                <app-pf-btn title="Live test"></app-pf-btn>
-            </a>
+            @if(!workingExample.comingsoon){
+                <a href="{{workingExample.testlink}}" target="_blank">
+                    <app-pf-btn title="Live test"></app-pf-btn>
+                </a>
+            } @else {
+                <span class="coming-soon">Coming soon!</span>
+            }
+           
         </div>
     </div>
 </section>

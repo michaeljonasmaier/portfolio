@@ -19,14 +19,14 @@ export class ReviewsComponent {
         text: "reviews.review-1"
       },
       {
+        name: "Sascha Töpfer",
+        project: "DABubble",
+        text: "reviews.review-3"
+      },
+      {
         name: "Mariia Ivanova",
         project: "Join",
         text: "reviews.review-2"
-      },
-      {
-        name: "Noah Müller",
-        project: "Pollo Loco",
-        text: "reviews.review-3"
       }
     ]
   }

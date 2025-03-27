@@ -6,4 +6,5 @@ export interface WorkingExample {
     reverse: boolean;
     link: string;
     testlink: string;
+    comingsoon?: boolean;
 }
